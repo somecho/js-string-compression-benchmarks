@@ -505,4 +505,4 @@ if (typeof define === 'function' && define.amd) {
 		});
 }
 
-export default LZString;
+module.exports = LZString;

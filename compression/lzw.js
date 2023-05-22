@@ -53,7 +53,8 @@ function lzw_decode(s) {
     return out.join("");
 }
 
-export default {
+module.exports = {
 	encode: lzw_encode,
 	decode: lzw_decode
 }
+

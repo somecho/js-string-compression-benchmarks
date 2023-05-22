@@ -45,5 +45,4 @@ const sketch = `;©2022 Some Cho
         (-> (polygon x y r 3 offset)
             (draw-polygon))))))
 `
-
-export default sketch;
+module.exports = sketch;

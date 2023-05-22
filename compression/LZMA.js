@@ -2666,4 +2666,4 @@ var LZMA = (function () {
 
 /// This is used by browsers that do not support web workers (and possibly Node.js).
 // this.LZMA = this.LZMA_WORKER = LZMA;
-export default LZMA;
+module.exports = LZMA;

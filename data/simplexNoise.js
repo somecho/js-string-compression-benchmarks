@@ -92,4 +92,4 @@ float snoise(vec4 v){
 
 }
 `
-export default simplexNoise;
+module.exports = simplexNoise;

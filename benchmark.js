@@ -1,10 +1,13 @@
-import LZMA from './LZMA.mjs'
-import LZString from './LZString.mjs'
-import lzw from './lzw.mjs'
-import ULZSS from './ULZSS.mjs'
-import sketch from './sketch.mjs'
-import simplexNoise from './simplexNoise.mjs'
-import triangle from './triangle.mjs'
+//COMPRESSION
+const LZMA = require('./compression/LZMA.js')
+const LZString = require('./compression/LZString.js')
+const lzw = require('./compression/lzw.js')
+const ULZSS = require('./compression/ULZSS.js')
+
+// DATA
+const sketch = require('./data/sketch.js')
+const simplexNoise = require('./data/simplexNoise.js')
+const triangle = require('./data/triangle.js')
 
 function compress(s, fn) {
 	const encoder = new TextEncoder();
@@ -136,5 +139,5 @@ const benchmarks = [
 ]
 
 benchmarks.forEach(b => {
-	// benchmark(b)
+	benchmark(b)
 })

@@ -391,4 +391,4 @@ module.exports = {
 	getSwitchesStr,
 };
 `
-export default triangle;
+module.exports = triangle;

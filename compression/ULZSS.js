@@ -184,4 +184,4 @@ ULZSS.charSize = function(c){
     }
 }
 
-export default ULZSS;
+module.exports = ULZSS;
